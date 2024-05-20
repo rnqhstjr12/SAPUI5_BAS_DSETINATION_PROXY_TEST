@@ -4,7 +4,7 @@ const httpProxy = require('http-proxy');
 const proxy = httpProxy.createProxyServer({
     changeOrigin: true, // 목적지의 origin을 변경
     secure: false, // SSL/TLS 연결을 사용할지 여부
-    rejectUnauthorized: false // 클라이언트가 서버로부터 받은 SSL 인증서의 유효성을 검사
+    rejectUnauthorized: false // 클라이언트가 서버로부터 받은 SSL 인증서의 유효성을 검사 d
 });
  
 const server = http.createServer((req, res) => {
